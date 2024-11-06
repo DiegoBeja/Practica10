@@ -4,9 +4,13 @@ public class MisionPosibleMain {
     	e.agregarElemento(new Terricola("Ripley", e,new Posicion(3,2)));
     	e.agregarElemento(new Extraterrestre("Alien", e,new Posicion(3,5)));
     	e.agregarElemento(new Roca(e, new Posicion(4,3)));
-    	Bomba b = new Bomba(e, new Posicion(4,4),1);
+    	Bomba b = new Bomba(e, new Posicion(4,4),3);
     	e.agregarElemento(b);
     	System.out.println(e);
     	b.explotar();
+
+		e.leerArchivoEscenarioNuevo();
+		e.guardarEscenarioNuevo();
+		System.out.println(e);
     }
 }

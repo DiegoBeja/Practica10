@@ -1,0 +1,4 @@
+
+Roca 3 4
+Bomba 4 4 3
+Extraterrestre 5 3
